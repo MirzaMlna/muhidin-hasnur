@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --mh-orange: #fe8c08;
+}
+
+.text-mh-orange {
+  color: var(--mh-orange);
+}
+.bg-mh-orange {
+  background-color: var(--mh-orange);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}

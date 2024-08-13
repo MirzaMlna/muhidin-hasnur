@@ -1,0 +1,44 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+
+export default function MainNavbar() {
+  return (
+    <Navbar expand="lg" className="bg-primary sticky-top" data-bs-theme="dark">
+      <Container>
+        <Navbar.Brand href="#heroSection" className="fw-bold ">
+          MUHIDIN HASNUR
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#heroSection">
+              <i className="bi bi-house"> </i>Beranda
+            </Nav.Link>
+            <Nav.Link href="#biographySection">
+              <i className="bi bi-people-fill"> </i>Biografi
+            </Nav.Link>
+            <Nav.Link href="#experienceSection">
+              <i className="bi bi-people-fill"> </i>Pengalaman
+            </Nav.Link>
+            <Nav.Link href="#vmSection">
+              <i className="bi bi-people-fill"> </i>Visi Misi
+            </Nav.Link>
+            <NavDropdown title="Sosial Media" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">
+                <i className="bi bi-instagram"></i> Instaram
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                <i className="bi bi-tiktok"></i> Tiktok
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">
+                <i className="bi bi-facebook"></i> Facebook
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
