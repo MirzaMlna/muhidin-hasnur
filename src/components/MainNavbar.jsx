@@ -5,7 +5,11 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 export default function MainNavbar() {
   return (
-    <Navbar expand="lg" className="bg-primary sticky-top" data-bs-theme="dark">
+    <Navbar
+      expand="lg"
+      className="bg-light sticky-top py-3"
+      data-bs-theme="light"
+    >
       <Container>
         <Navbar.Brand href="#heroSection" className="fw-bold ">
           MUHIDIN HASNUR
@@ -17,13 +21,13 @@ export default function MainNavbar() {
               <i className="bi bi-house"> </i>Beranda
             </Nav.Link>
             <Nav.Link href="#biographySection">
-              <i className="bi bi-people-fill"> </i>Biografi
+              <i className="bi bi-people"> </i>Biografi
             </Nav.Link>
             <Nav.Link href="#experienceSection">
-              <i className="bi bi-people-fill"> </i>Pengalaman
+              <i className="bi bi-list-check"> </i>Pengalaman
             </Nav.Link>
             <Nav.Link href="#vmSection">
-              <i className="bi bi-people-fill"> </i>Visi Misi
+              <i className="bi bi-file-earmark-text"> </i>Visi Misi
             </Nav.Link>
             <NavDropdown title="Sosial Media" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">

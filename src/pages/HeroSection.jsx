@@ -3,8 +3,11 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
 function HeroSection() {
   return (
-    <section id="heroSection" className="bg-light py-5">
-      <Container className="d-flex align-items-center justify-content-center">
+    <section
+      id="heroSection"
+      className="pb-5 vh-100 d-flex align-items-center justify-content-center"
+    >
+      <Container className="">
         <Row className="align-items-center">
           <Col md={6}>
             <Image src="./assets/hero-image.webp" fluid alt="Gambar Hero" />
@@ -15,7 +18,7 @@ function HeroSection() {
               &rdquo;Bekerja Bersama Merangkul Semua&ldquo;
             </p>
             <Button href="#biographySection" variant="primary" size="md">
-              Biografi Muhidin Hasnur
+              Selengkapnya
             </Button>
           </Col>
         </Row>
