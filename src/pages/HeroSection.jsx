@@ -17,7 +17,7 @@ function HeroSection() {
             <p className="lead">
               &rdquo;Bekerja Bersama Merangkul Semua&ldquo;
             </p>
-            <Button href="#biographySection" variant="primary" size="md">
+            <Button href="#aboutSection" variant="primary" size="md">
               Selengkapnya
             </Button>
           </Col>

@@ -1,18 +1,16 @@
-import { useState } from "react";
+// import { useState } from "react";
 import MainNavbar from "./components/MainNavbar";
 import HeroSection from "./pages/HeroSection";
 import AboutSection from "./pages/AboutSection";
-import AboutModal from "./components/AboutModal";
+// import AboutModal from "./components/AboutModal";
 
-function App() {
+export default function App() {
   return (
     <>
       <MainNavbar />
       <HeroSection />
-      <AboutSection></AboutSection>
-      <AboutModal />
+      <AboutSection />
+      {/* <AboutModal /> */}
     </>
   );
 }
-
-export default App;

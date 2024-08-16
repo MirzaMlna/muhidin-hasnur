@@ -20,7 +20,7 @@ export default function MainNavbar() {
             <Nav.Link href="#heroSection">
               <i className="bi bi-house"> </i>Beranda
             </Nav.Link>
-            <Nav.Link href="#biographySection">
+            <Nav.Link href="#aboutSection">
               <i className="bi bi-people"> </i>Biografi
             </Nav.Link>
             <Nav.Link href="#experienceSection">
