@@ -4,6 +4,10 @@
   --mh-orange: #fe8c08;
 }
 
+* {
+  font-family: "Nunito", sans-serif;
+}
+
 .text-mh-orange {
   color: var(--mh-orange);
 }
@@ -11,6 +15,6 @@
   background-color: var(--mh-orange);
 }
 
-* {
-  font-family: "Nunito", sans-serif;
+.text-justify {
+  text-align: justify;
 }

@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <section
       id="heroSection"
-      className="pb-5 vh-100 d-flex align-items-center justify-content-center"
+      className="d-flex align-items-center justify-content-center shadow pb-5"
     >
       <Container className="">
         <Row className="align-items-center">

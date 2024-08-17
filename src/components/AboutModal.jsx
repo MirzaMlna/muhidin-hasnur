@@ -21,21 +21,23 @@ export default function AboutModal({ showModal, selectedMH, handleClose }) {
       </Modal.Header>
       <Modal.Body>
         <h5>
-          <span className="fw-bold">Nama :</span> {selectedMH?.name}
+          <span className="fw-bold">Nama : </span>
+          {selectedMH?.name}
         </h5>
         <h5>
-          <span className="fw-bold">Tempat Lahir :</span>
+          <span className="fw-bold">Tempat Lahir : </span>
           {selectedMH?.bornLocation}
         </h5>
         <h5>
-          <span className="fw-bold">Tanggal Lahir :</span>
+          <span className="fw-bold">Tanggal Lahir : </span>
           {selectedMH?.bornDate}
         </h5>
         <h5>
-          <span className="fw-bold">Usia :</span> {selectedMH?.age}
+          <span className="fw-bold">Usia : </span>
+          {selectedMH?.age}
         </h5>
         <h5>
-          <span className="fw-bold">Pengalaman Menjabat:</span>
+          <span className="fw-bold">Pengalaman Menjabat: </span>
         </h5>
         <ListGroup>
           {selectedMH?.experience?.map((exp, index) => (

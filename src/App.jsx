@@ -2,7 +2,8 @@
 import MainNavbar from "./components/MainNavbar";
 import HeroSection from "./pages/HeroSection";
 import AboutSection from "./pages/AboutSection";
-// import AboutModal from "./components/AboutModal";
+import VMSection from "./pages/VMSection";
+import SynergySection from "./pages/SynergySecrion";
 
 export default function App() {
   return (
@@ -10,7 +11,8 @@ export default function App() {
       <MainNavbar />
       <HeroSection />
       <AboutSection />
-      {/* <AboutModal /> */}
+      <VMSection />
+      <SynergySection />
     </>
   );
 }

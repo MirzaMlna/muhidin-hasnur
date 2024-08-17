@@ -23,11 +23,11 @@ export default function MainNavbar() {
             <Nav.Link href="#aboutSection">
               <i className="bi bi-people"> </i>Biografi
             </Nav.Link>
-            <Nav.Link href="#experienceSection">
-              <i className="bi bi-list-check"> </i>Pengalaman
-            </Nav.Link>
             <Nav.Link href="#vmSection">
               <i className="bi bi-file-earmark-text"> </i>Visi Misi
+            </Nav.Link>
+            <Nav.Link href="#synergySection">
+              <i className="bi bi-arrow-repeat"> </i>Sinergi
             </Nav.Link>
             <NavDropdown title="Sosial Media" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">

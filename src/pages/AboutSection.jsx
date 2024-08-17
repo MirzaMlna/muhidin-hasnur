@@ -41,10 +41,10 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="aboutSection" className="vh-100">
-      <Container className="text-center">
-        <h1 className="text-center mb-4 fw-bold">
-          <i className="bi bi-people-fill"> </i>Biografi
+    <section id="aboutSection" className="pt-5 pb-5">
+      <Container className="text-center pt-5">
+        <h1 className="mb-5 fw-bold text-primary">
+          <i className="bi bi-people-fill text-mh-orange"> </i>Biografi
         </h1>
         <Row>
           <Col md={6} className="mb-lg-0 mb-5">
@@ -56,7 +56,12 @@ export default function AboutSection() {
               roundedCircle
             />
             <h2 className="mt-3">H. Muhidin</h2>
-            <Button variant="primary" onClick={() => handleShowModal(hMuhidin)}>
+            <p className="fst-italic">Calon Gubernur Kalsel</p>
+            <Button
+              variant="primary"
+              className="shadow-sm"
+              onClick={() => handleShowModal(hMuhidin)}
+            >
               Tampilkan Biografi
             </Button>
           </Col>
@@ -69,6 +74,7 @@ export default function AboutSection() {
               roundedCircle
             />
             <h2 className="mt-3">H. Hasnuryadi Sulaiman</h2>
+            <p className="fst-italic">Calon Gubernur Kalsel</p>
             <Button
               variant="warning"
               className="bg-mh-orange text-light"
