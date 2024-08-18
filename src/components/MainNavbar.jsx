@@ -7,7 +7,7 @@ export default function MainNavbar() {
   return (
     <Navbar
       expand="lg"
-      className="bg-light sticky-top py-3"
+      className="bg-light sticky-top py-3 shadow"
       data-bs-theme="light"
     >
       <Container>
@@ -29,6 +29,7 @@ export default function MainNavbar() {
             <Nav.Link href="#synergySection">
               <i className="bi bi-arrow-repeat"> </i>Sinergi
             </Nav.Link>
+
             <NavDropdown title="Sosial Media" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">
                 <i className="bi bi-instagram"></i> Instaram

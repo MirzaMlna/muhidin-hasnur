@@ -1,4 +1,3 @@
-// import React from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
 function HeroSection() {
@@ -15,7 +14,7 @@ function HeroSection() {
           <Col md={6} className="text-md-start text-center mt-lg-0 mt-4">
             <h1 className="display-4 fw-bold">MUHIDIN-HASNUR</h1>
             <p className="lead">
-              &rdquo;Bekerja Bersama Merangkul Semua&ldquo;
+              &ldquo;Bekerja Bersama Merangkul Semua&rdquo;
             </p>
             <Button href="#aboutSection" variant="primary" size="md">
               Selengkapnya

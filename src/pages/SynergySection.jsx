@@ -1,15 +1,15 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 export default function SynergySection() {
   return (
-    <section id="synergySection" className="vh-100">
-      <Container className="text-center pt-5 px-lg-0 px-5">
-        <h1 className="text-center text-primary mb-5 fw-bold pt-5">
+    <section id="synergySection" className="mb-5">
+      <Container className="text-start pt-5 px-lg-0 px-5">
+        <h1 className="text-primary mb-5 fw-bold pt-5">
           <i className="bi bi-arrow-repeat text-mh-orange"> </i>Sinergi
+          <div className="section-title-line"></div>
         </h1>
         <Row>
-          <h5 className="fw-light text-justify">
+          <h5 className="fw-light">
             Sinergi antara Haji Muhidin dan Hasnuriyadi HB (Hasnur) sebagai
             pasangan pemimpin menawarkan kombinasi yang kuat dan ideal untuk
             memimpin Kalimantan Selatan. <br />

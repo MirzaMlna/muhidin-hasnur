@@ -43,8 +43,9 @@ export default function AboutSection() {
   return (
     <section id="aboutSection" className="pt-5 pb-5">
       <Container className="text-center pt-5">
-        <h1 className="mb-5 fw-bold text-primary">
+        <h1 className="text-start mb-5 fw-bold text-primary">
           <i className="bi bi-people-fill text-mh-orange"> </i>Biografi
+          <div className="section-title-line"></div>
         </h1>
         <Row>
           <Col md={6} className="mb-lg-0 mb-5">
