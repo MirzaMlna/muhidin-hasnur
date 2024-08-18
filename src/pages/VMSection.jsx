@@ -8,7 +8,7 @@ export default function VMSection() {
         <h1 className="mb-5 fw-bold text-primary">
           <i className="bi bi-file-earmark-text text-mh-orange"> </i>Visi Misi
         </h1>
-        <Row className="px-5">
+        <Row className="px-lg-0 px-5">
           <Col md={6}>
             <h3 className="fw-bold">Visi</h3>
             <h5 className="fw-light text-justify">
