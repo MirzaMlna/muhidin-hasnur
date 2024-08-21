@@ -5,13 +5,13 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 MainNavbar.propTypes = {
-  handleIsDarkTheme: PropTypes.bool,
-  isDarkTheme: PropTypes.func,
+  handleIsDarkTheme: PropTypes.func,
+  isDarkTheme: PropTypes.bool,
 };
 
 export default function MainNavbar({ handleIsDarkTheme, isDarkTheme }) {
   const [isMusicPlay, setIsMusicPlay] = useState(false);
-  const [audio] = useState(new Audio("/public/assets/music/mh_jingle.mp3"));
+  const [audio] = useState(new Audio("./assets/music/mh_jingle.mp3"));
   audio.volume = 0.3;
 
   const handleMusic = () => {
@@ -32,8 +32,12 @@ export default function MainNavbar({ handleIsDarkTheme, isDarkTheme }) {
       <Container>
         <Navbar.Brand className="fw-bold">MUHIDIN HASNUR</Navbar.Brand>
         <Nav className="ms-auto">
-          <Nav.Link className="fs-5 pointer" onClick={handleMusic}>
-            {isMusicPlay ? "Matikan Musik" : "Putar Musik"}
+          <Nav.Link className="fs-6 pointer" onClick={handleMusic}>
+            <i
+              className={`bi fs-5 ${
+                isMusicPlay ? "bi-pause-circle-fill" : "bi-play-circle-fill"
+              }`}
+            ></i>
           </Nav.Link>
           <Nav.Link> | </Nav.Link>
           <Nav.Link>

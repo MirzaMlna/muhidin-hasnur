@@ -4,10 +4,11 @@ import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
 import VMSection from "./sections/VMSection";
 import SynergySection from "./sections/SynergySection";
+import SupportingSection from "./sections/SupportingSection";
 import Footer from "./sections/FooterSection";
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
   const handleIsDarkTheme = () => {
     setIsDarkTheme(!isDarkTheme);
   };
@@ -26,6 +27,7 @@ function App() {
       <AboutSection isDarkTheme={isDarkTheme} />
       <VMSection />
       <SynergySection />
+      <SupportingSection />
       <Footer isDarkTheme={isDarkTheme} />
     </div>
   );
