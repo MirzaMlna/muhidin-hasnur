@@ -13,6 +13,21 @@ body {
   scroll-behavior: smooth;
 }
 
+.mh-bg-light {
+  background-image: url(/public/background-light.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mh-bg-dark {
+  background-image: url(/public/background-dark.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .section-title-line {
   margin-top: 10px;
   border: 3px solid var(--mh-orange);
@@ -27,6 +42,6 @@ body {
   background-color: var(--mh-orange);
 }
 
-.text-justify {
-  text-align: justify;
+.pointer {
+  cursor: pointer;
 }

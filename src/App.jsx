@@ -1,20 +1,34 @@
-// import { useState } from "react";
+import { useState } from "react";
 import MainNavbar from "./components/MainNavbar";
-import HeroSection from "./pages/HeroSection";
-import AboutSection from "./pages/AboutSection";
-import VMSection from "./pages/VMSection";
-import SynergySection from "./pages/SynergySection";
-import FooterSection from "./pages/FooterSection";
+import HeroSection from "./sections/HeroSection";
+import AboutSection from "./sections/AboutSection";
+import VMSection from "./sections/VMSection";
+import SynergySection from "./sections/SynergySection";
+import Footer from "./sections/FooterSection";
 
-export default function App() {
+function App() {
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const handleIsDarkTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
+
   return (
-    <>
-      <MainNavbar />
+    <div
+      className={`App ${
+        isDarkTheme ? "mh-bg-dark text-light" : "mh-bg-light text-dark"
+      }`}
+    >
+      <MainNavbar
+        isDarkTheme={isDarkTheme}
+        handleIsDarkTheme={handleIsDarkTheme}
+      />
       <HeroSection />
-      <AboutSection />
+      <AboutSection isDarkTheme={isDarkTheme} />
       <VMSection />
       <SynergySection />
-      <FooterSection />
-    </>
+      <Footer isDarkTheme={isDarkTheme} />
+    </div>
   );
 }
+
+export default App;

@@ -1,48 +1,50 @@
+import { useState } from "react";
+import PropTypes from "prop-types";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import Nav from "react-bootstrap/Nav";
 
-export default function MainNavbar() {
+MainNavbar.propTypes = {
+  handleIsDarkTheme: PropTypes.bool,
+  isDarkTheme: PropTypes.func,
+};
+
+export default function MainNavbar({ handleIsDarkTheme, isDarkTheme }) {
+  const [isMusicPlay, setIsMusicPlay] = useState(false);
+  const [audio] = useState(new Audio("/public/assets/music/mh_jingle.mp3"));
+  audio.volume = 0.3;
+
+  const handleMusic = () => {
+    if (isMusicPlay) {
+      audio.pause();
+      setIsMusicPlay(false);
+    } else {
+      audio.play();
+      setIsMusicPlay(true);
+    }
+  };
+
   return (
     <Navbar
-      expand="lg"
-      className="bg-light sticky-top py-3 shadow"
-      data-bs-theme="light"
+      data-bs-theme={isDarkTheme ? "dark" : "light"}
+      className="bg-body sticky-top shadow"
     >
       <Container>
-        <Navbar.Brand href="#heroSection" className="fw-bold ">
-          MUHIDIN HASNUR
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#heroSection">
-              <i className="bi bi-house"> </i>Beranda
-            </Nav.Link>
-            <Nav.Link href="#aboutSection">
-              <i className="bi bi-people"> </i>Biografi
-            </Nav.Link>
-            <Nav.Link href="#vmSection">
-              <i className="bi bi-file-earmark-text"> </i>Visi Misi
-            </Nav.Link>
-            <Nav.Link href="#synergySection">
-              <i className="bi bi-arrow-repeat"> </i>Sinergi
-            </Nav.Link>
-
-            <NavDropdown title="Sosial Media" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
-                <i className="bi bi-instagram"></i> Instaram
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                <i className="bi bi-tiktok"></i> Tiktok
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                <i className="bi bi-facebook"></i> Facebook
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
+        <Navbar.Brand className="fw-bold">MUHIDIN HASNUR</Navbar.Brand>
+        <Nav className="ms-auto">
+          <Nav.Link className="fs-5 pointer" onClick={handleMusic}>
+            {isMusicPlay ? "Matikan Musik" : "Putar Musik"}
+          </Nav.Link>
+          <Nav.Link> | </Nav.Link>
+          <Nav.Link>
+            <i
+              onClick={handleIsDarkTheme}
+              className={`text-body fs-5 bi ${
+                isDarkTheme ? "bi-sun-fill" : "bi-moon-stars-fill"
+              }`}
+            ></i>
+          </Nav.Link>
+        </Nav>
       </Container>
     </Navbar>
   );
