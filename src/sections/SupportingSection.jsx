@@ -37,7 +37,7 @@ export default function SupportingSection() {
     <section className="pt-5 pb-5">
       <Container className="image-gallery">
         <h1 className="text-primary mb-5 fw-bold">
-          <i className="bi bi-arrow-up-square text-mh-orange"></i>Pengusung
+          <i className="bi bi-arrow-up-square text-mh-orange"> </i>Pengusung
           <div className="section-title-line"></div>
         </h1>
         <Row

@@ -8,9 +8,9 @@ export default function Footer({ isDarkTheme }) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={isDarkTheme ? "bg-dark" : "bg-light"}>
+    <footer className={`py-5 ${isDarkTheme ? "bg-dark" : "bg-light"}`}>
       <Container>
-        <Row className="py-3">
+        <Row className="">
           <Col className="text-center">
             <p>
               &copy; {currentYear} Muhidin Hasnur Official. All rights reserved.

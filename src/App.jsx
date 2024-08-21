@@ -6,6 +6,7 @@ import VMSection from "./sections/VMSection";
 import SynergySection from "./sections/SynergySection";
 import SupportingSection from "./sections/SupportingSection";
 import Footer from "./sections/FooterSection";
+import MusicPlayer from "./components/MusicPlayer";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         isDarkTheme={isDarkTheme}
         handleIsDarkTheme={handleIsDarkTheme}
       />
+      <MusicPlayer isDarkTheme={isDarkTheme} />
       <HeroSection />
       <AboutSection isDarkTheme={isDarkTheme} />
       <VMSection />

@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function VMSection() {
   return (
-    <section id="vmSection" className="text-start pt-5 pb-5 ">
+    <section id="vmSection" className="text-start py-5 ">
       <Container>
         <h1 className="mb-5 fw-bold text-primary">
           <i className="bi bi-file-earmark-text text-mh-orange"> </i>Visi Misi
