@@ -6,12 +6,12 @@ import Image from "react-bootstrap/Image";
 
 export default function SupportingSection() {
   const images = [
-    "./assets/logos/pan.png",
-    "./assets/logos/pks.png",
-    "./assets/logos/demokrat.png",
-    "./assets/logos/pan.png",
-    "./assets/logos/pks.png",
-    "./assets/logos/demokrat.png",
+    "./assets/logos/pan.webp",
+    "./assets/logos/pks.webp",
+    "./assets/logos/demokrat.webp",
+    "./assets/logos/pan.webp",
+    "./assets/logos/pks.webp",
+    "./assets/logos/demokrat.webp",
   ];
 
   const rowRef = useRef(null);
