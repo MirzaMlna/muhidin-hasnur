@@ -1,12 +1,13 @@
 import { useState } from "react";
 import MainNavbar from "./components/MainNavbar";
+import MusicPlayer from "./components/MusicPlayer";
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
 import VMSection from "./sections/VMSection";
 import SynergySection from "./sections/SynergySection";
 import SupportingSection from "./sections/SupportingSection";
 import Footer from "./sections/FooterSection";
-import MusicPlayer from "./components/MusicPlayer";
+import QNASection from "./sections/QNASection";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -30,6 +31,7 @@ function App() {
       <VMSection />
       <SynergySection />
       <SupportingSection />
+      <QNASection isDarkTheme={isDarkTheme} />
       <Footer isDarkTheme={isDarkTheme} />
     </div>
   );
