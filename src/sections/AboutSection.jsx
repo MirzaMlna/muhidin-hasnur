@@ -83,7 +83,7 @@ export default function AboutSection({ isDarkTheme }) {
               roundedCircle
             />
             <h2 className="mt-3">H. Hasnuryadi Sulaiman</h2>
-            <p className="fst-italic">Calon Gubernur Kalsel</p>
+            <p className="fst-italic">Calon Wakil Gubernur Kalsel</p>
             <Button
               variant="warning"
               className="bg-mh-orange text-light"

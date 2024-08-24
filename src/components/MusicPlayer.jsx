@@ -11,7 +11,7 @@ export default function MusicPlayer({ isDarkTheme }) {
         controls
         loop={true}
         data-bs-theme={isDarkTheme ? "light" : "dark"}
-        src="./assets/music/mh_jingle.MP3"
+        src="./assets/music/mh_jingle.mp3"
       >
         Minta Rela, Browser Pian Kada Mendukung Gasan Memutar Lagu.
       </audio>
