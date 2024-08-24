@@ -1,6 +1,11 @@
+import PropTypes from "prop-types";
 import { Col, Container, Row, Card } from "react-bootstrap";
 
-export default function GallerySection() {
+GallerySection.propTypes = {
+  isDarkTheme: PropTypes.bool,
+};
+
+export default function GallerySection({ isDarkTheme }) {
   const images = [
     {
       image: "./assets/gallery/balangan.webp",
@@ -35,7 +40,10 @@ export default function GallerySection() {
         <Row className="px-lg-0 px-2 overflow-x-scroll flex-nowrap">
           {images.map((image, index) => (
             <Col key={index} lg={4} md={6} sm={12} className="px-1">
-              <Card>
+              <Card
+                data-bs-theme={isDarkTheme ? "dark" : "light"}
+                className="mb-3"
+              >
                 <Card.Img variant="top" src={image.image} />
                 <Card.Body>
                   <Card.Title>{image.title}</Card.Title>

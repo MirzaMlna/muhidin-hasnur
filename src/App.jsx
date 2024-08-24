@@ -35,7 +35,7 @@ function App() {
       <SupportingSection />
       <QNASection isDarkTheme={isDarkTheme} />
       <TestimoniSection />
-      <GallerySection />
+      <GallerySection isDarkTheme={isDarkTheme} />
       <Footer isDarkTheme={isDarkTheme} />
     </div>
   );
