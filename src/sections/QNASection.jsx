@@ -47,8 +47,8 @@ export default function QNASection({ isDarkTheme }) {
   return (
     <section id="qNASection" className="text-start py-5">
       <Container>
-        <h1 className="mb-5 fw-bold text-primary">
-          <i className="bi bi-chat-dots text-mh-orange"></i> Pertanyaan Netizen
+        <h1 className="mb-5 fw-bold ">
+          <i className="bi bi-chat-dots text-mh-primary"></i> Pertanyaan Netizen
           <div className="section-title-line"></div>
           <i className={`fs-6 ${isDarkTheme ? "text-light" : "text-dark"}`}>
             Tekan pertanyaan untuk mendapatkan jawaban.

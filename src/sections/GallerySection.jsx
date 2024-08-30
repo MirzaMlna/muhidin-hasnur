@@ -6,56 +6,48 @@ GallerySection.propTypes = {
 };
 
 export default function GallerySection({ isDarkTheme }) {
-  const images = [
+  const dataas = [
     {
-      image: "./assets/gallery/balangan.webp",
-      title: "Silaturahmi Pembakal Balangan",
+      image: "",
+      title: "Deklarasi Pasangan Muhidin-Hasnur",
+      date: "26 Agustus 2024",
     },
     {
-      image: "./assets/gallery/kota-baru.webp",
-      title: "Silaturahmi Pembakal Kota Baru",
-    },
-    {
-      image: "./assets/gallery/banjarmasin.webp",
-      title: "Silaturahmi Pembakal Banjarmasin",
-    },
-    {
-      image: "./assets/gallery/hsu.webp",
-      title: "Silaturahmi Pembakal HSU",
-    },
-    {
-      image: "./assets/gallery/tanah-bumbu.webp",
-      title: "Silaturahmi Pembakal Tanah Bumbu",
+      image: "",
+      title: "Pendaftaran Pasangan Muhidin-Hasnur Ke KPU",
+      date: "29 Agustus 2024",
     },
   ];
 
   return (
     <section id="gallerySection" className="text-start py-5">
       <Container>
-        <h1 className="text-start mb-5 fw-bold text-primary">
-          <i className="bi bi-image text-mh-orange"> </i>Galeri
+        <h1 className="text-start mb-5 fw-bold">
+          <i className="bi bi-image text-mh-primary"> </i>Galeri
           <div className="section-title-line"></div>
+          <i className={`fs-6 ${isDarkTheme ? "text-light" : "text-dark"}`}>
+            Geser Untuk Melihat Gambar Lainnya
+          </i>
         </h1>
 
         <Row className="px-lg-0 px-2 overflow-x-scroll flex-nowrap">
-          {images.map((image, index) => (
+          {dataas.map((data, index) => (
             <Col key={index} lg={4} md={6} sm={12} className="px-1">
               <Card
                 data-bs-theme={isDarkTheme ? "dark" : "light"}
                 className="mb-3"
               >
-                <Card.Img variant="top" src={image.image} />
+                <Card.Img
+                  variant="top"
+                  src={data.image ? data.image : "./null-image.webp"}
+                />
                 <Card.Body>
-                  <Card.Title>{image.title}</Card.Title>
+                  <Card.Title>{data.title}</Card.Title>
+                  <Card.Subtitle className="mt-3 text-secondary">
+                    {data.date}
+                  </Card.Subtitle>
                 </Card.Body>
               </Card>
-              {/* <Image
-                src={image.image}
-                alt={`Image ${index + 1}`}
-                fluid
-                className="mb-2"
-              />
-              <p>{image.caption}</p> */}
             </Col>
           ))}
         </Row>

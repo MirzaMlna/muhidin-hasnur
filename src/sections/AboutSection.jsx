@@ -51,24 +51,23 @@ export default function AboutSection({ isDarkTheme }) {
       className={`${isDarkTheme ? "bg-dark" : "bg-light"} pt-5 pb-5`}
     >
       <Container className="text-center">
-        <h1 className="text-start mb-5 fw-bold text-primary">
-          <i className="bi bi-people-fill text-mh-orange"> </i>Biografi
+        <h1 className="text-start mb-5 fw-bold">
+          <i className="bi bi-people-fill text-mh-primary"> </i>Biografi
           <div className="section-title-line"></div>
         </h1>
         <Row>
           <Col md={6} className="mb-lg-0 mb-5">
             <Image
-              className="shadow"
+              className="shadow rounded-5"
               width="300"
-              src="./assets/images/h-muhidin-circle.webp"
+              src="./assets/images/h-muhidin.webp"
               fluid
-              roundedCircle
             />
             <h2 className="mt-3">H. Muhidin</h2>
             <p className="fst-italic">Calon Gubernur Kalsel</p>
             <Button
               variant="primary"
-              className="shadow-sm"
+              className="bg-mh-primary text-light"
               onClick={() => handleShowModal(hMuhidin)}
             >
               Tampilkan Biografi
@@ -76,17 +75,16 @@ export default function AboutSection({ isDarkTheme }) {
           </Col>
           <Col md={6}>
             <Image
-              className="shadow"
+              className="shadow rounded-5"
               width="300"
-              src="./assets/images/hasnur-circle.webp"
+              src="./assets/images/h-hasnur.webp"
               fluid
-              roundedCircle
             />
             <h2 className="mt-3">H. Hasnuryadi Sulaiman</h2>
             <p className="fst-italic">Calon Wakil Gubernur Kalsel</p>
             <Button
-              variant="warning"
-              className="bg-mh-orange text-light"
+              variant="primary"
+              className="bg-mh-primary text-light"
               onClick={() => handleShowModal(hasnur)}
             >
               Tampilkan Biografi

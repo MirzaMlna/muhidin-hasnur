@@ -32,9 +32,9 @@ function App() {
       <AboutSection isDarkTheme={isDarkTheme} />
       <VMSection />
       <SynergySection />
-      <SupportingSection />
       <QNASection isDarkTheme={isDarkTheme} />
-      <TestimoniSection />
+      <SupportingSection />
+      <TestimoniSection isDarkTheme={isDarkTheme} />
       <GallerySection isDarkTheme={isDarkTheme} />
       <Footer isDarkTheme={isDarkTheme} />
     </div>

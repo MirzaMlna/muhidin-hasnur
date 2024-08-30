@@ -4,8 +4,8 @@ export default function SynergySection() {
   return (
     <section id="synergySection" className="mb-5">
       <Container className="text-start pt-5">
-        <h1 className="text-primary mb-5 fw-bold">
-          <i className="bi bi-arrow-repeat text-mh-orange"> </i>Sinergi
+        <h1 className=" mb-5 fw-bold">
+          <i className="bi bi-arrow-repeat text-mh-primary"> </i>Sinergi
           <div className="section-title-line"></div>
         </h1>
         <Row className=" px-lg-0 px-2">

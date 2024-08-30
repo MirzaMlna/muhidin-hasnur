@@ -10,10 +10,7 @@ MainNavbar.propTypes = {
 
 export default function MainNavbar({ handleIsDarkTheme, isDarkTheme }) {
   return (
-    <Navbar
-      data-bs-theme={isDarkTheme ? "dark" : "light"}
-      className="bg-body sticky-top shadow"
-    >
+    <Navbar data-bs-theme="dark" className="sticky-top shadow bg-mh-primary">
       <Container>
         <Navbar.Brand className="fw-bold">MUHIDIN HASNUR</Navbar.Brand>
         <Nav className="ms-auto">

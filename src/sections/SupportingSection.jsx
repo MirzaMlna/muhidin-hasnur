@@ -9,9 +9,8 @@ export default function SupportingSection() {
     "./assets/logos/pan.webp",
     "./assets/logos/pks.webp",
     "./assets/logos/demokrat.webp",
-    "./assets/logos/pan.webp",
-    "./assets/logos/pks.webp",
-    "./assets/logos/demokrat.webp",
+    "./assets/logos/psi.webp",
+    "./assets/logos/perindo.webp",
   ];
 
   const rowRef = useRef(null);
@@ -36,8 +35,8 @@ export default function SupportingSection() {
   return (
     <section className="pt-5 pb-5">
       <Container className="image-gallery">
-        <h1 className="text-primary mb-5 fw-bold">
-          <i className="bi bi-arrow-up-square text-mh-orange"> </i>Pengusung
+        <h1 className=" mb-5 fw-bold">
+          <i className="bi bi-arrow-up-square text-mh-primary"> </i>Pengusung
           <div className="section-title-line"></div>
         </h1>
         <Row
@@ -45,7 +44,7 @@ export default function SupportingSection() {
           className="px-lg-0 px-2 overflow-x-scroll flex-nowrap"
         >
           {images.map((image, index) => (
-            <Col key={index} xs={4} className="px-1">
+            <Col key={index} xs={4} className="px-1 mb-3">
               <Image src={image} alt={`Image ${index + 1}`} fluid />
             </Col>
           ))}

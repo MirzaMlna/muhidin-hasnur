@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
-  --mh-orange: #fe8c08;
+  --mh-primary: #1a51a3;
 }
 
 * {
@@ -30,16 +30,16 @@ body {
 
 .section-title-line {
   margin-top: 10px;
-  border: 3px solid var(--mh-orange);
+  border: 3px solid var(--mh-primary);
   width: 175px;
   border-radius: 10px;
 }
 
-.text-mh-orange {
-  color: var(--mh-orange);
+.text-mh-primary {
+  color: var(--mh-primary);
 }
-.bg-mh-orange {
-  background-color: var(--mh-orange);
+.bg-mh-primary {
+  background-color: var(--mh-primary);
 }
 
 .pointer {

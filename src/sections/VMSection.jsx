@@ -4,8 +4,8 @@ export default function VMSection() {
   return (
     <section id="vmSection" className="text-start py-5 ">
       <Container>
-        <h1 className="mb-5 fw-bold text-primary">
-          <i className="bi bi-file-earmark-text text-mh-orange"> </i>Visi Misi
+        <h1 className="mb-5 fw-bold ">
+          <i className="bi bi-file-earmark-text text-mh-primary"> </i>Visi Misi
           <div className="section-title-line"></div>
         </h1>
         <Row className="px-lg-0 px-2">
