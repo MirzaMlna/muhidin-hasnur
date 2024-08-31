@@ -25,12 +25,14 @@ export default function GallerySection({ isDarkTheme }) {
         <h1 className="text-start mb-5 fw-bold">
           <i className="bi bi-image text-mh-primary"> </i>Galeri
           <div className="section-title-line"></div>
-          <i className={`fs-6 ${isDarkTheme ? "text-light" : "text-dark"}`}>
-            Geser Untuk Melihat Gambar Lainnya
-          </i>
         </h1>
 
-        <Row className="px-lg-0 px-2 overflow-x-scroll flex-nowrap">
+        <i
+          className={`fs-6 fw-bold ${isDarkTheme ? "text-light" : "text-dark"}`}
+        >
+          Geser Untuk Melihat Gambar Lainnya
+        </i>
+        <Row className="px-lg-0 px-2 mt-2 overflow-x-scroll flex-nowrap">
           {dataas.map((data, index) => (
             <Col key={index} lg={4} md={6} sm={12} className="px-1">
               <Card

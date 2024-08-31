@@ -50,11 +50,15 @@ export default function TestimoniSection({ isDarkTheme }) {
         <h1 className="text-start mb-5 fw-bold ">
           <i className="bi bi-person-check text-mh-primary"> </i>Testimoni
           <div className="section-title-line"></div>
-          <i className={`fs-6 ${isDarkTheme ? "text-light" : "text-dark"}`}>
-            Geser Untuk Melihat Testimoni Lainnya
-          </i>
         </h1>
-        <Row className="px-lg-0 px-2 overflow-x-scroll flex-nowrap">
+        <i
+          className={`fs-6 fw-bold mb-2 ${
+            isDarkTheme ? "text-light" : "text-dark"
+          }`}
+        >
+          Geser Untuk Melihat Testimoni Lainnya
+        </i>
+        <Row className="px-lg-0 px-2 mt-2 overflow-x-scroll flex-nowrap">
           {testimonis.map((testimoni, index) => (
             <Col key={index} lg={4} md={6} sm={12} className="px-1 mb-3">
               <Card data-bs-theme={isDarkTheme ? "dark" : "light"}>
