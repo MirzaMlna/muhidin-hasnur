@@ -8,12 +8,12 @@ GallerySection.propTypes = {
 export default function GallerySection({ isDarkTheme }) {
   const dataas = [
     {
-      image: "",
+      image: "./assets/gallery/deklarasi.webp",
       title: "Deklarasi Pasangan Muhidin-Hasnur",
       date: "26 Agustus 2024",
     },
     {
-      image: "",
+      image: "./assets/gallery/pendaftaran.webp",
       title: "Pendaftaran Pasangan Muhidin-Hasnur Ke KPU",
       date: "29 Agustus 2024",
     },
