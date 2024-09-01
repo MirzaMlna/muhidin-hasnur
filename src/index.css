@@ -48,7 +48,7 @@ body {
 
 /* Hero */
 .typewriter {
-  border-right: 0.15em solid;
+  border-right: 0.1em solid;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
@@ -61,6 +61,6 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: black; /* Sesuaikan warna kursor dengan kebutuhan */
+    border-color: #292d32; /* Sesuaikan warna kursor dengan kebutuhan */
   }
 }

@@ -36,7 +36,7 @@ function App() {
       <SupportingSection />
       <TestimoniSection isDarkTheme={isDarkTheme} />
       <GallerySection isDarkTheme={isDarkTheme} />
-      <Footer isDarkTheme={isDarkTheme} />
+      <Footer />
     </div>
   );
 }

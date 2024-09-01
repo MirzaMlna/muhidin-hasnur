@@ -16,7 +16,7 @@ function HeroSection({ isDarkTheme }) {
       const timer = setTimeout(() => {
         setText((prev) => prev + fullText.charAt(index));
         setIndex((prev) => prev + 1);
-      }, 200);
+      }, 100);
 
       return () => clearTimeout(timer);
     }

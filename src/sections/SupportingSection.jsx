@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import FadeInSection from "../components/FadeInSection";
 
 export default function SupportingSection() {
   const images = [
@@ -33,23 +34,25 @@ export default function SupportingSection() {
   }, []);
 
   return (
-    <section className="pt-5 pb-5">
-      <Container className="image-gallery">
-        <h1 className=" mb-5 fw-bold">
-          <i className="bi bi-arrow-up-square text-mh-primary"> </i>Pengusung
-          <div className="section-title-line"></div>
-        </h1>
-        <Row
-          ref={rowRef}
-          className="px-lg-0 px-2 overflow-x-scroll flex-nowrap"
-        >
-          {images.map((image, index) => (
-            <Col key={index} xs={4} className="px-1 mb-3">
-              <Image src={image} alt={`Image ${index + 1}`} fluid />
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
+    <FadeInSection>
+      <section className="pt-5 pb-5">
+        <Container className="image-gallery">
+          <h1 className=" mb-5 fw-bold">
+            <i className="bi bi-arrow-up-square text-mh-primary"> </i>Pengusung
+            <div className="section-title-line"></div>
+          </h1>
+          <Row
+            ref={rowRef}
+            className="px-lg-0 px-2 overflow-x-scroll flex-nowrap"
+          >
+            {images.map((image, index) => (
+              <Col key={index} xs={4} className="px-1 mb-3">
+                <Image src={image} alt={`Image ${index + 1}`} fluid />
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+    </FadeInSection>
   );
 }

@@ -1,16 +1,10 @@
-import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
 
-Footer.propTypes = {
-  isDarkTheme: PropTypes.bool,
-};
-export default function Footer({ isDarkTheme }) {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer
-      className={`py-5 bg-mh-primary ${isDarkTheme ? "bg-dark" : "bg-light"}`}
-    >
+    <footer className={`py-5 bg-mh-primary text-light`}>
       <Container>
         <Row className="">
           <Col className="text-center">

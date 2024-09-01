@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import AboutModal from "../components/AboutModal";
+import FadeInSection from "../components/FadeInSection";
 
 AboutSection.propTypes = {
   isDarkTheme: PropTypes.bool,
@@ -46,57 +47,59 @@ export default function AboutSection({ isDarkTheme }) {
   };
 
   return (
-    <section
-      id="aboutSection"
-      className={`${isDarkTheme ? "bg-dark" : "bg-light"} pt-5 pb-5`}
-    >
-      <Container className="text-center">
-        <h1 className="text-start mb-5 fw-bold">
-          <i className="bi bi-people-fill text-mh-primary"> </i>Biografi
-          <div className="section-title-line"></div>
-        </h1>
-        <Row>
-          <Col md={6} className="mb-lg-0 mb-5">
-            <Image
-              className="shadow rounded-5"
-              width="300"
-              src="./assets/images/h-muhidin.webp"
-              fluid
-            />
-            <h2 className="mt-3">H. Muhidin</h2>
-            <p className="fst-italic">Calon Gubernur Kalsel</p>
-            <Button
-              variant="primary"
-              className="bg-mh-primary text-light"
-              onClick={() => handleShowModal(hMuhidin)}
-            >
-              Tampilkan Biografi
-            </Button>
-          </Col>
-          <Col md={6}>
-            <Image
-              className="shadow rounded-5"
-              width="300"
-              src="./assets/images/h-hasnur.webp"
-              fluid
-            />
-            <h2 className="mt-3">H. Hasnuryadi Sulaiman</h2>
-            <p className="fst-italic">Calon Wakil Gubernur Kalsel</p>
-            <Button
-              variant="primary"
-              className="bg-mh-primary text-light"
-              onClick={() => handleShowModal(hasnur)}
-            >
-              Tampilkan Biografi
-            </Button>
-          </Col>
-        </Row>
-        <AboutModal
-          showModal={showModal}
-          selectedMH={selectedMH}
-          handleClose={handleCloseModal}
-        />
-      </Container>
-    </section>
+    <FadeInSection>
+      <section
+        id="aboutSection"
+        className={`${isDarkTheme ? "bg-dark" : "bg-light"} pt-5 pb-5`}
+      >
+        <Container className="text-center">
+          <h1 className="text-start mb-5 fw-bold">
+            <i className="bi bi-people-fill text-mh-primary"> </i>Biografi
+            <div className="section-title-line"></div>
+          </h1>
+          <Row>
+            <Col md={6} className="mb-lg-0 mb-5">
+              <Image
+                className="shadow rounded-5"
+                width="300"
+                src="./assets/images/h-muhidin.webp"
+                fluid
+              />
+              <h2 className="mt-3">H. Muhidin</h2>
+              <p className="fst-italic">Calon Gubernur Kalsel</p>
+              <Button
+                variant="primary"
+                className="bg-mh-primary text-light"
+                onClick={() => handleShowModal(hMuhidin)}
+              >
+                Tampilkan Biografi
+              </Button>
+            </Col>
+            <Col md={6}>
+              <Image
+                className="shadow rounded-5"
+                width="300"
+                src="./assets/images/h-hasnur.webp"
+                fluid
+              />
+              <h2 className="mt-3">H. Hasnuryadi Sulaiman</h2>
+              <p className="fst-italic">Calon Wakil Gubernur Kalsel</p>
+              <Button
+                variant="primary"
+                className="bg-mh-primary text-light"
+                onClick={() => handleShowModal(hasnur)}
+              >
+                Tampilkan Biografi
+              </Button>
+            </Col>
+          </Row>
+          <AboutModal
+            showModal={showModal}
+            selectedMH={selectedMH}
+            handleClose={handleCloseModal}
+          />
+        </Container>
+      </section>
+    </FadeInSection>
   );
 }

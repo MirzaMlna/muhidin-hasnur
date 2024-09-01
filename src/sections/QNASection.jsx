@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import { Container, ListGroup } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
+import FadeInSection from "../components/FadeInSection";
 
 QNASection.propTypes = {
   isDarkTheme: PropTypes.bool,
@@ -45,63 +46,68 @@ export default function QNASection({ isDarkTheme }) {
   };
 
   return (
-    <section id="qNASection" className="text-start py-5">
-      <Container>
-        <h1 className="mb-5 fw-bold ">
-          <i className="bi bi-chat-dots text-mh-primary"></i> Pertanyaan Netizen
-          <div className="section-title-line"></div>
-        </h1>
-        <i
-          className={`fs-6 fw-bold ${isDarkTheme ? "text-light" : "text-dark"}`}
-        >
-          Tekan pertanyaan untuk menampilkan jawaban.
-        </i>
-        <ListGroup
-          className="mt-2"
-          data-bs-theme={isDarkTheme ? "dark" : "light"}
-        >
-          {QNAData.map((item, index) => (
-            <div key={index}>
-              <ListGroup.Item
-                action
-                onClick={() => handleToggle(index)}
-                aria-controls={`answer-${index}`}
-                aria-expanded={openIndex === index}
-              >
-                <div className="d-flex justify-content-between align-items-center">
-                  {item.question}
-                  <i className="bi bi-fingerprint"></i>
-                </div>
-              </ListGroup.Item>
-              <AnimatePresence initial={false}>
-                {openIndex === index && (
-                  <motion.div
-                    id={`answer-${index}`}
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{
-                      height: { duration: 0.4, ease: "easeInOut" },
-                      opacity: { duration: 0.3, ease: "easeInOut" },
-                    }}
-                    className="p-3 overflow-hidden bg-body"
-                  >
+    <FadeInSection>
+      <section id="qNASection" className="text-start py-5">
+        <Container>
+          <h1 className="mb-5 fw-bold ">
+            <i className="bi bi-chat-dots text-mh-primary"></i> Pertanyaan
+            Netizen
+            <div className="section-title-line"></div>
+          </h1>
+          <i
+            className={`fs-6 fw-bold ${
+              isDarkTheme ? "text-light" : "text-dark"
+            }`}
+          >
+            Tekan pertanyaan untuk menampilkan jawaban.
+          </i>
+          <ListGroup
+            className="mt-2"
+            data-bs-theme={isDarkTheme ? "dark" : "light"}
+          >
+            {QNAData.map((item, index) => (
+              <div key={index}>
+                <ListGroup.Item
+                  action
+                  onClick={() => handleToggle(index)}
+                  aria-controls={`answer-${index}`}
+                  aria-expanded={openIndex === index}
+                >
+                  <div className="d-flex justify-content-between align-items-center">
+                    {item.question}
+                    <i className="bi bi-fingerprint"></i>
+                  </div>
+                </ListGroup.Item>
+                <AnimatePresence initial={false}>
+                  {openIndex === index && (
                     <motion.div
-                      initial={{ scaleY: 0 }}
-                      animate={{ scaleY: 1 }}
-                      exit={{ scaleY: 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
-                      style={{ transformOrigin: "top" }}
+                      id={`answer-${index}`}
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{
+                        height: { duration: 0.4, ease: "easeInOut" },
+                        opacity: { duration: 0.3, ease: "easeInOut" },
+                      }}
+                      className="p-3 overflow-hidden bg-body"
                     >
-                      {item.answer}
+                      <motion.div
+                        initial={{ scaleY: 0 }}
+                        animate={{ scaleY: 1 }}
+                        exit={{ scaleY: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        style={{ transformOrigin: "top" }}
+                      >
+                        {item.answer}
+                      </motion.div>
                     </motion.div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          ))}
-        </ListGroup>
-      </Container>
-    </section>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+          </ListGroup>
+        </Container>
+      </section>
+    </FadeInSection>
   );
 }
