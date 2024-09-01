@@ -1,14 +1,9 @@
-import PropTypes from "prop-types";
 import { useState } from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import AboutModal from "../components/AboutModal";
 import FadeInSection from "../components/FadeInSection";
 
-AboutSection.propTypes = {
-  isDarkTheme: PropTypes.bool,
-};
-
-export default function AboutSection({ isDarkTheme }) {
+export default function AboutSection() {
   const [showModal, setShowModal] = useState(false);
   const [selectedMH, setSelectedMH] = useState(null);
 
@@ -48,10 +43,7 @@ export default function AboutSection({ isDarkTheme }) {
 
   return (
     <FadeInSection>
-      <section
-        id="aboutSection"
-        className={`${isDarkTheme ? "bg-dark" : "bg-light"} pt-5 pb-5`}
-      >
+      <section id="aboutSection" className={`pt-5 pb-5`}>
         <Container className="text-center">
           <h1 className="text-start mb-5 fw-bold">
             <i className="bi bi-people-fill text-mh-primary"> </i>Biografi

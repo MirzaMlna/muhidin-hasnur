@@ -49,7 +49,7 @@ function HeroSection({ isDarkTheme }) {
             >
               Minta Rela, Browser Pian Kada Mendukung Gasan Memutar Lagu.
             </audio>
-            <p className="fw-bold">&uarr; Lagu Muhidin-Hasnur &uarr;</p>
+            <p className="fw-bold">&uarr; Putar Lagu Muhidin-Hasnur &uarr;</p>
           </Col>
         </Row>
       </Container>

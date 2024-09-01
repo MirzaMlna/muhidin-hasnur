@@ -20,7 +20,7 @@ function App() {
   return (
     <div
       className={`App ${
-        isDarkTheme ? "mh-bg-dark text-light" : "mh-bg-light text-dark"
+        isDarkTheme ? "bg-dark text-light" : "bg-light text-dark"
       }`}
     >
       <MainNavbar
@@ -29,7 +29,7 @@ function App() {
       />
       {/* <MusicPlayer isDarkTheme={isDarkTheme} /> */}
       <HeroSection isDarkTheme={isDarkTheme} />
-      <AboutSection isDarkTheme={isDarkTheme} />
+      <AboutSection />
       <VMSection />
       <SynergySection />
       <QNASection isDarkTheme={isDarkTheme} />
