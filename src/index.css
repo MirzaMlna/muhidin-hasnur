@@ -45,3 +45,22 @@ body {
 .pointer {
   cursor: pointer;
 }
+
+/* Hero */
+.typewriter {
+  border-right: 0.15em solid;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black; /* Sesuaikan warna kursor dengan kebutuhan */
+  }
+}

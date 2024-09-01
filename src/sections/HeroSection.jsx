@@ -1,6 +1,27 @@
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
-function HeroSection() {
+HeroSection.propTypes = {
+  isDarkTheme: PropTypes.bool,
+};
+
+function HeroSection({ isDarkTheme }) {
+  const [text, setText] = useState("");
+  const fullText = "“Bekerja Bersama Merangkul Semua”";
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < fullText.length) {
+      const timer = setTimeout(() => {
+        setText((prev) => prev + fullText.charAt(index));
+        setIndex((prev) => prev + 1);
+      }, 200);
+
+      return () => clearTimeout(timer);
+    }
+  }, [index, fullText]);
+
   return (
     <section
       id="heroSection"
@@ -18,17 +39,17 @@ function HeroSection() {
           <Col md={1}></Col>
           <Col md={6} className="text-md-start text-center mt-lg-0 mt-4">
             <h1 className="display-4 fw-bold">MUHIDIN-HASNUR</h1>
-            <p className="lead">
-              &ldquo;Bekerja Bersama Merangkul Semua&rdquo;
-            </p>
-            <Button
-              href="#aboutSection"
-              className="bg-mh-primary"
-              variant="primary"
-              size="md"
+            <p className="lead typewriter">{text}</p>
+            <br></br>
+            <audio
+              controls
+              loop={true}
+              data-bs-theme={isDarkTheme ? "light" : "dark"}
+              src="./assets/music/mh_jingle.mp3"
             >
-              Selengkapnya
-            </Button>
+              Minta Rela, Browser Pian Kada Mendukung Gasan Memutar Lagu.
+            </audio>
+            <p className="fw-bold">&uarr; Lagu Muhidin-Hasnur &uarr;</p>
           </Col>
         </Row>
       </Container>

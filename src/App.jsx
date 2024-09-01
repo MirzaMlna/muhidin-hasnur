@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MainNavbar from "./components/MainNavbar";
-import MusicPlayer from "./components/MusicPlayer";
+// import MusicPlayer from "./components/MusicPlayer";
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
 import VMSection from "./sections/VMSection";
@@ -27,8 +27,8 @@ function App() {
         isDarkTheme={isDarkTheme}
         handleIsDarkTheme={handleIsDarkTheme}
       />
-      <MusicPlayer isDarkTheme={isDarkTheme} />
-      <HeroSection />
+      {/* <MusicPlayer isDarkTheme={isDarkTheme} /> */}
+      <HeroSection isDarkTheme={isDarkTheme} />
       <AboutSection isDarkTheme={isDarkTheme} />
       <VMSection />
       <SynergySection />
