@@ -44,6 +44,7 @@ export default function AboutModal({ showModal, selectedMH, handleClose }) {
             <ListGroup.Item key={index}>{exp}</ListGroup.Item>
           ))}
         </ListGroup>
+        <p className="mt-3">{selectedMH?.narrative}</p>
       </Modal.Body>
     </Modal>
   );

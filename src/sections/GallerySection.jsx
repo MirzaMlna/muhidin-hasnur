@@ -9,6 +9,11 @@ GallerySection.propTypes = {
 export default function GallerySection({ isDarkTheme }) {
   const datas = [
     {
+      image: "./assets/gallery/bersama-h-isam.webp",
+      title: "Foto Bersama H. Samsudin Andi Arsyad (H. Isam)",
+      date: "-",
+    },
+    {
       image: "./assets/gallery/deklarasi.webp",
       title: "Deklarasi Pasangan Muhidin-Hasnur",
       date: "26 Agustus 2024",
