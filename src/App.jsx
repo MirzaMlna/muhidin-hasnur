@@ -9,14 +9,13 @@ import SupportingSection from "./sections/SupportingSection";
 import Footer from "./sections/FooterSection";
 import QNASection from "./sections/QNASection";
 import GallerySection from "./sections/GallerySection";
-import TestimoniSection from "./sections/TestimoniSection";
+// import TestimoniSection from "./sections/TestimoniSection";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const handleIsDarkTheme = () => {
     setIsDarkTheme(!isDarkTheme);
   };
-
   return (
     <div
       className={`App ${
@@ -34,7 +33,7 @@ function App() {
       <SynergySection />
       <QNASection isDarkTheme={isDarkTheme} />
       <SupportingSection />
-      <TestimoniSection isDarkTheme={isDarkTheme} />
+      {/* <TestimoniSection isDarkTheme={isDarkTheme} /> */}
       <GallerySection isDarkTheme={isDarkTheme} />
       <Footer />
     </div>

@@ -28,17 +28,19 @@ export default function QNASection({ isDarkTheme }) {
         "Selama menjabat sebagai Walikota Banjarmasin, beliau tidak pernah menyentuh gaji, honor, insentif, atau uang perjalanan dinas. Semua hasil tersebut dikumpulkan hingga akhir masa jabatan dan disumbangkan untuk pembangunan dan perbaikan masjid serta mushola. Sejak awal dilantik, beliau sudah berjanji untuk menyumbangkan seluruh penghasilan selama menjabat. Tindakan ini sangat langka di tengah banyaknya pemimpin yang memanfaatkan jabatan untuk kepentingan pribadi. Sebagai pengusaha sukses, beliau sudah berkecukupan dan ingin mengabdikan diri demi kesejahteraan masyarakat dalam berbagai bidang.",
     },
     {
-      question: "Pertanyaan 4",
-      answer: "Jawaban Pertanyaan 4",
+      question: "Apa Saja Pencapaian H. Muhidin ?",
+      answer:
+        "Saat menjabat sebagai walikota, pembangunan infrastruktur, pelayanan publik, dan kebersihan kota meningkat menjadi lebih baik. Selain itu di bawah kepemimpinannya, Banjarmasin meraih beberapa penghargaan, termasuk Adipura, sebuah penghargaan nasional di Indonesia untuk kota-kota yang berhasil menjaga kebersihan dan pengelolaan lingkungan. Saat menjadi wakil Gubernur, beliau berkontribusi dalam pengembangan berbagai sektor, termasuk infrastruktur, pendidikan, dan kesehatan di provinsi Kalimantan Selatan. ",
     },
     {
-      question: "Pertanyaan 5",
-      answer: "Jawaban Pertanyaan 5",
+      question: "Apa Saja Pencapaian H. Hasnuryadi Sulaiman ?",
+      answer:
+        "Saat menjadi anggota DPR beliau aktif dalam berbagai komisi, termasuk komisi yang menangani bidang pendidikan, olahraga, pariwisata, dan ekonomi kreatif. Selain itu, di bawah kepemimpinannya, Barito Putera terus berkembang sebagai salah satu klub terkemuka di Indonesia. Ia berperan penting dalam pengembangan talenta muda melalui akademi sepak bola Barito Putera. H. Hasnuryadi Sulaiman juga aktif dalam kegiatan sosial dan pendidikan. Melalui yayasan yang didirikan oleh keluarganya, Yayasan Hasnur Centre, ia mendukung berbagai inisiatif sosial, termasuk pendidikan, kesehatan, dan bantuan kemanusiaan di Kalimantan Selatan. Yayasan ini juga mendukung program beasiswa dan pelatihan keterampilan bagi masyarakat setempat.",
     },
-    {
-      question: "Pertanyaan 6",
-      answer: "Jawaban Pertanyaan 6",
-    },
+    // {
+    //   question: "Pertanyaan 6",
+    //   answer: "Jawaban Pertanyaan 6",
+    // },
   ];
 
   const handleToggle = (index) => {

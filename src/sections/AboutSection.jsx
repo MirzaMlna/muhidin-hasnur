@@ -42,7 +42,7 @@ export default function AboutSection() {
       "Anggota Dewan Pembina - Yayasan Hasnur Centre",
     ],
     narrative:
-      "H. Hasnuryadi Sulaiman adalah pengusaha dan politisi asal Kalimantan Selatan, Indonesia, serta putra dari pendiri Hasnur Group, Haji Sulaiman HB. Hasnur Group bergerak di berbagai sektor seperti pertambangan, perkebunan, dan transportasi. Selain itu, Hasnuryadi juga merupakan pemilik klub sepak bola Barito Putera, yang telah menjadi tim kompetitif di liga Indonesia. Di dunia politik, ia pernah menjabat sebagai anggota DPR RI dari Partai Golkar, mewakili Kalimantan Selatan, dan dikenal atas kontribusinya terhadap pembangunan daerahnya di bidang ekonomi, olahraga, dan sosial.",
+      '"H. Hasnuryadi Sulaiman" adalah pengusaha dan politisi asal Kalimantan Selatan, Indonesia, serta putra dari pendiri Hasnur Group, Haji Sulaiman HB. Hasnur Group bergerak di berbagai sektor seperti pertambangan, perkebunan, dan transportasi. Selain itu, Hasnuryadi juga merupakan pemilik klub sepak bola Barito Putera, yang telah menjadi tim kompetitif di liga Indonesia. Di dunia politik, ia pernah menjabat sebagai anggota DPR RI dari Partai Golkar, mewakili Kalimantan Selatan, dan dikenal atas kontribusinya terhadap pembangunan daerahnya di bidang ekonomi, olahraga, dan sosial.',
   };
 
   return (

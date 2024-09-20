@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import FadeInSection from "../components/FadeInSection";
 
 export default function VMSection() {
@@ -15,19 +15,30 @@ export default function VMSection() {
             <Col md={6}>
               <h3 className="fw-bold">Visi</h3>
               <h5 className="fw-light">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-                iusto odio soluta iste facere quisquam praesentium itaque
-                consectetur sint obcaecati.
+                KalSel BEKERJA (Berkelanjutan, Berbudaya, Religi, Dan Sejahtera)
+                Menuju Gerbang Logistik Kalimantan.
               </h5>
             </Col>
             <Col md={6}>
               <h3 className="fw-bold">Misi</h3>
-              <h5 className="fw-light">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam ratione, labore ullam voluptates doloremque perspiciatis
-                fugiat dolor temporibus harum alias est soluta dolores officiis
-                cupiditate nulla molestias, neque quidem minima!
-              </h5>
+              <ListGroup>
+                <ListGroup.Item>
+                  Pembangunan Manusia Yang Unggul, Berbudaya, Religi, Dan
+                  Berakhlak Mulia
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  Pembangunan Infrastruktur Yang Handal
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  Pertumbuhan Ekonomi Yang Berkelanjutan, Merata, Dan Syariah
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  Penguatan Ketahanan Terhadap Peubahan Iklim
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  Tata Kelola Pelayanan Yang Mudah dan Cepat
+                </ListGroup.Item>
+              </ListGroup>
             </Col>
           </Row>
         </Container>
