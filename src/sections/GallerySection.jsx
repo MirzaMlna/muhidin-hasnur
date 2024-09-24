@@ -24,9 +24,24 @@ export default function GallerySection({ isDarkTheme }) {
       date: "29 Agustus 2024",
     },
     {
-      image: "./assets/gallery/baayun-maulid.jpg",
+      image: "./assets/gallery/baayun-maulid.webp",
       title: "Baayun Maulid - Tapin",
       date: "16 September 2024",
+    },
+    {
+      image: "./assets/gallery/deklarasi-relawan.webp",
+      title: "Deklarasi Puluhan Relawan Pendukung Muhidin-Hasnur",
+      date: "16 September 2024",
+    },
+    {
+      image: "null-image.webp",
+      title: "Konsolidasi & Deklarasi Dukungan Relawan Gerakan Indonesia Muda",
+      date: "22 September 2024",
+    },
+    {
+      image: "./assets/gallery/pengundian.webp",
+      title: "Pengundian Nomor Urut Paslon Gubernur & Wakil Gubernur Kalsel",
+      date: "23 September 2024",
     },
   ];
 
