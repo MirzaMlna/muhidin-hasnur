@@ -13,6 +13,11 @@ export default function QNASection({ isDarkTheme }) {
 
   const QNAData = [
     {
+      question: "Pasangan Muhidin-Hasnur Nomor Berapa ?",
+      answer:
+        "Berdasarkan pengundian nomor urut pasangan calon pada tanggal 23 September 2024, pasangan Muhidin-Hasnur mendapatkan nomor urut 1.",
+    },
+    {
       question: "Kenapa Harus Muhidin-Hasnur ?",
       answer:
         "Karena pasangan Muhidin Hasnur memiliki sinergi yang saling melengkapi. Haji Muhidin dikenal sebagai sosok yang dermawan, rendah hati, religius, dan humoris, serta telah terbukti berhasil dalam membangun Kota Banjarmasin selama satu periode kepemimpinannya, sedangkan Hasnur dengan jiwa muda, inovatif, dan kreatif, membawa energi baru yang fokus pada pengembangan kepemudaan, olahraga, dan pendidikan.",
@@ -37,6 +42,7 @@ export default function QNASection({ isDarkTheme }) {
       answer:
         "Saat menjadi anggota DPR beliau aktif dalam berbagai komisi, termasuk komisi yang menangani bidang pendidikan, olahraga, pariwisata, dan ekonomi kreatif. Selain itu, di bawah kepemimpinannya, Barito Putera terus berkembang sebagai salah satu klub terkemuka di Indonesia. Ia berperan penting dalam pengembangan talenta muda melalui akademi sepak bola Barito Putera. H. Hasnuryadi Sulaiman juga aktif dalam kegiatan sosial dan pendidikan. Melalui yayasan yang didirikan oleh keluarganya, Yayasan Hasnur Centre, ia mendukung berbagai inisiatif sosial, termasuk pendidikan, kesehatan, dan bantuan kemanusiaan di Kalimantan Selatan. Yayasan ini juga mendukung program beasiswa dan pelatihan keterampilan bagi masyarakat setempat.",
     },
+
     // {
     //   question: "Pertanyaan 6",
     //   answer: "Jawaban Pertanyaan 6",

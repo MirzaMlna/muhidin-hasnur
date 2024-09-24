@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
-import { Col, Container, Row, Card } from "react-bootstrap";
+import { Col, Container, Card } from "react-bootstrap";
 import FadeInSection from "../components/FadeInSection";
+import AutoScrollContainer from "../components/AutoScrollContainer";
 
 CampaignPromisesSection.propTypes = {
   isDarkTheme: PropTypes.bool,
@@ -68,7 +69,8 @@ export default function CampaignPromisesSection({ isDarkTheme }) {
           >
             Geser Untuk Melihat Janji Lainnya
           </i>
-          <Row className="px-lg-0 px-2 mt-2 overflow-x-scroll flex-nowrap">
+
+          <AutoScrollContainer scrollSpeed={0}>
             {datas.map((data, index) => (
               <Col key={index} lg={4} md={6} sm={12} className="px-1">
                 <Card
@@ -85,7 +87,7 @@ export default function CampaignPromisesSection({ isDarkTheme }) {
                 </Card>
               </Col>
             ))}
-          </Row>
+          </AutoScrollContainer>
         </Container>
       </section>
     </FadeInSection>
