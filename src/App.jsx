@@ -9,6 +9,7 @@ import SupportingSection from "./sections/SupportingSection";
 import Footer from "./sections/FooterSection";
 import QNASection from "./sections/QNASection";
 import GallerySection from "./sections/GallerySection";
+import CampaignPromisesSection from "./sections/CampaignPromisesSection";
 // import TestimoniSection from "./sections/TestimoniSection";
 
 function App() {
@@ -29,8 +30,9 @@ function App() {
       {/* <MusicPlayer isDarkTheme={isDarkTheme} /> */}
       <HeroSection isDarkTheme={isDarkTheme} />
       <AboutSection />
-      <VMSection />
       <SynergySection />
+      <VMSection />
+      <CampaignPromisesSection />
       <QNASection isDarkTheme={isDarkTheme} />
       <SupportingSection />
       {/* <TestimoniSection isDarkTheme={isDarkTheme} /> */}

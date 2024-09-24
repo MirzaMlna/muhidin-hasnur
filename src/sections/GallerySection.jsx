@@ -23,6 +23,11 @@ export default function GallerySection({ isDarkTheme }) {
       title: "Pendaftaran Pasangan Muhidin-Hasnur Ke KPU",
       date: "29 Agustus 2024",
     },
+    {
+      image: "./assets/gallery/baayun-maulid.jpg",
+      title: "Baayun Maulid - Tapin",
+      date: "16 September 2024",
+    },
   ];
 
   return (
