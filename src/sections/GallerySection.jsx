@@ -14,8 +14,8 @@ export default function GallerySection({ isDarkTheme }) {
       date: "23 September 2024",
     },
     {
-      image: "null-image.webp",
-      title: "Konsolidasi & Deklarasi Dukungan Relawan Gerakan Indonesia Muda",
+      image: "./assets/gallery/deklarasi-gim.webp",
+      title: "Deklarasi Dukungan Relawan Gerakan Indonesia Muda",
       date: "22 September 2024",
     },
     {
@@ -23,11 +23,11 @@ export default function GallerySection({ isDarkTheme }) {
       title: "Deklarasi Puluhan Tim Relawan Pendukung Muhidin-Hasnur",
       date: "16 September 2024",
     },
-    {
-      image: "./assets/gallery/baayun-maulid.webp",
-      title: "Baayun Maulid - Tapin",
-      date: "16 September 2024",
-    },
+    // {
+    //   image: "./assets/gallery/baayun-maulid.webp",
+    //   title: "Baayun Maulid - Tapin",
+    //   date: "16 September 2024",
+    // },
     {
       image: "./assets/gallery/pendaftaran.webp",
       title: "Pendaftaran Pasangan Muhidin-Hasnur Ke KPU",

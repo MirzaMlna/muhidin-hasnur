@@ -27,7 +27,7 @@ export default function CampaignPromisesSection({ isDarkTheme }) {
     },
     {
       image: "./assets/promises/promise-5.webp",
-      promise: "Pembangunan Jembata Pulau Laut.",
+      promise: "Pembangunan Jembatan Pulau Laut.",
     },
     {
       image: "./assets/promises/promise-6.webp",
@@ -35,7 +35,7 @@ export default function CampaignPromisesSection({ isDarkTheme }) {
     },
     {
       image: "./assets/promises/promise-7.webp",
-      promise: "Mendorong Bandara Internasional Syamsudin Noor",
+      promise: "Mendorong Peningkatan Bandara Internasional Syamsudin Noor",
     },
     {
       image: "./assets/promises/promise-8.webp",
