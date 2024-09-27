@@ -32,7 +32,7 @@ function App() {
       <AboutSection />
       <SynergySection />
       <VMSection />
-      <CampaignPromisesSection />
+      <CampaignPromisesSection isDarkTheme={isDarkTheme} />
       <QNASection isDarkTheme={isDarkTheme} />
       <SupportingSection />
       {/* <TestimoniSection isDarkTheme={isDarkTheme} /> */}

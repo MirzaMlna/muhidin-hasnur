@@ -9,29 +9,9 @@ GallerySection.propTypes = {
 export default function GallerySection({ isDarkTheme }) {
   const datas = [
     {
-      image: "./assets/gallery/bersama-h-isam.webp",
-      title: "Foto Bersama H. Samsudin Andi Arsyad (H. Isam)",
-      date: "2024",
-    },
-    {
-      image: "./assets/gallery/deklarasi.webp",
-      title: "Deklarasi Pasangan Muhidin-Hasnur",
-      date: "26 Agustus 2024",
-    },
-    {
-      image: "./assets/gallery/pendaftaran.webp",
-      title: "Pendaftaran Pasangan Muhidin-Hasnur Ke KPU",
-      date: "29 Agustus 2024",
-    },
-    {
-      image: "./assets/gallery/baayun-maulid.webp",
-      title: "Baayun Maulid - Tapin",
-      date: "16 September 2024",
-    },
-    {
-      image: "./assets/gallery/deklarasi-relawan.webp",
-      title: "Deklarasi Puluhan Relawan Pendukung Muhidin-Hasnur",
-      date: "16 September 2024",
+      image: "./assets/gallery/pengundian.webp",
+      title: "Pengundian Nomor Urut Paslon Gubernur & Wakil Gubernur Kalsel",
+      date: "23 September 2024",
     },
     {
       image: "null-image.webp",
@@ -39,9 +19,29 @@ export default function GallerySection({ isDarkTheme }) {
       date: "22 September 2024",
     },
     {
-      image: "./assets/gallery/pengundian.webp",
-      title: "Pengundian Nomor Urut Paslon Gubernur & Wakil Gubernur Kalsel",
-      date: "23 September 2024",
+      image: "./assets/gallery/deklarasi-relawan.webp",
+      title: "Deklarasi Puluhan Tim Relawan Pendukung Muhidin-Hasnur",
+      date: "16 September 2024",
+    },
+    {
+      image: "./assets/gallery/baayun-maulid.webp",
+      title: "Baayun Maulid - Tapin",
+      date: "16 September 2024",
+    },
+    {
+      image: "./assets/gallery/pendaftaran.webp",
+      title: "Pendaftaran Pasangan Muhidin-Hasnur Ke KPU",
+      date: "29 Agustus 2024",
+    },
+    {
+      image: "./assets/gallery/deklarasi.webp",
+      title: "Deklarasi Pasangan Muhidin-Hasnur",
+      date: "26 Agustus 2024",
+    },
+    {
+      image: "./assets/gallery/bersama-h-isam.webp",
+      title: "Foto Bersama H. Samsudin Andi Arsyad (H. Isam)",
+      date: "2024",
     },
   ];
 
@@ -55,11 +55,11 @@ export default function GallerySection({ isDarkTheme }) {
           </h1>
 
           <i
-            className={`fs-6 fw-bold ${
+            className={`fs-3 fw-bold ${
               isDarkTheme ? "text-light" : "text-dark"
             }`}
           >
-            Geser Untuk Melihat Gambar Lainnya
+            Geser Untuk Melihat Gambar Lainnya &#10609;
           </i>
           <Row className="px-lg-0 px-2 mt-2 overflow-x-scroll flex-nowrap">
             {datas.map((data, index) => (

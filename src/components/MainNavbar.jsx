@@ -15,6 +15,11 @@ export default function MainNavbar({ handleIsDarkTheme, isDarkTheme }) {
         <Navbar.Brand className="fw-bold">MUHIDIN HASNUR</Navbar.Brand>
         <Nav className="ms-auto">
           <Nav.Link>
+            <i className={`text-body fs-5 bi bi-tiktok`}>
+              <a href="https://www.tiktok.com/@muhidinhasnur"></a>
+            </i>
+          </Nav.Link>
+          <Nav.Link>
             <i
               onClick={handleIsDarkTheme}
               className={`text-body fs-5 bi ${

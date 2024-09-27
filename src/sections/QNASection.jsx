@@ -63,11 +63,12 @@ export default function QNASection({ isDarkTheme }) {
             <div className="section-title-line"></div>
           </h1>
           <i
-            className={`fs-6 fw-bold ${
+            className={`fs-3 fw-bold ${
               isDarkTheme ? "text-light" : "text-dark"
             }`}
           >
-            Tekan pertanyaan untuk menampilkan jawaban.
+            Tekan pertanyaan untuk menampilkan jawaban{" "}
+            <i className="bi bi-hand-index"></i>
           </i>
           <ListGroup
             className="mt-2"

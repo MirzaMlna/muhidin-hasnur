@@ -62,11 +62,11 @@ export default function CampaignPromisesSection({ isDarkTheme }) {
           </h1>
 
           <i
-            className={`fs-6 fw-bold ${
+            className={`fs-3 fw-bold ${
               isDarkTheme ? "text-light" : "text-dark"
             }`}
           >
-            Geser Untuk Melihat Janji Lainnya
+            Geser Untuk Melihat Janji Lainnya &#10609;
           </i>
           <Row className="px-lg-0 px-2 mt-2 overflow-x-scroll flex-nowrap">
             {datas.map((data, index) => (
